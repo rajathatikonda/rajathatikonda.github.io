@@ -1,1 +1,159 @@
-Raja Thatikonda
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ichimoku Cloud Investment Advisor – Portfolio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; line-height:1.5; margin:0; padding:0; }
+    header, nav, section, footer { padding: 1rem; }
+    header { background:#004d99; color:#fff; }
+    nav { background:#f1f1f1; }
+    nav a { margin-right:1rem; color:#004d99; text-decoration:none; }
+    nav a:hover { text-decoration:underline; }
+    h1, h2, h3 { margin-top:1.5rem; }
+    table { border-collapse: collapse; width:100%; margin:1rem 0; }
+    table, th, td { border:1px solid #ccc; }
+    th, td { padding:0.5rem; text-align:left; }
+    ul { margin:1rem 0 1rem 1.5rem; }
+    figure { margin:1rem 0; }
+    img { max-width:100%; height:auto; }
+    details { margin:1rem 0; }
+    summary { font-weight:bold; cursor:pointer; }
+    footer { background:#f1f1f1; text-align:center; font-size:0.9rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ichimoku Cloud Investment Advisor</h1>
+    <p>This project calculates Ichimoku Cloud indicators in Python, provides a Streamlit UI for real-time data and parameter tuning, integrates CrewAI agents to output BUY/SELL/HOLD signals, and includes a Backtrader backtesting framework. I implemented the indicator engine, built the UI, wrote and tested the CrewAI agent code, and developed the end-to-end backtest pipeline.</p>
+  </header>
+
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#sprints">Sprint Objectives</a>
+    <a href="#tasks">User Stories & Tasks</a>
+    <a href="#evidence">Contributions & Evidence</a>
+    <a href="#appendix">Appendix</a>
+  </nav>
+
+  <section id="overview">
+    <h2>Overview</h2>
+    <p>The Ichimoku Cloud Investment Advisor is a Python application that:</p>
+    <ul>
+      <li>Calculates Tenkan-sen, Kijun-sen, Senkou Span A/B, and Chikou Span from historical price data.</li>
+      <li>Displays results in a Streamlit interface with real-time quotes and customizable parameters.</li>
+      <li>Uses a GPT-4o CrewAI agent to analyze indicator values and current price, outputting clear BUY/SELL/HOLD recommendations.</li>
+      <li>Backtests those signals using Backtrader to produce performance metrics and trade logs.</li>
+    </ul>
+  </section>
+
+  <section id="sprints">
+    <h2>Sprint Objectives</h2>
+    <table>
+      <thead>
+        <tr><th>Sprint</th><th>Objective</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Indicator calculation MVP</td></tr>
+        <tr><td>2</td><td>CrewAI integration &amp; UI spike</td></tr>
+        <tr><td>3</td><td>Agent refinement &amp; testing</td></tr>
+        <tr><td>4</td><td>Backtesting framework &amp; working MVP</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="tasks">
+    <h2>User Stories &amp; Key Tasks</h2>
+    <p>Here I summarize the core functionality delivered for each key user story/task that I personally executed:</p>
+    <table>
+      <thead>
+        <tr><th>Story/Task</th><th>Description</th><th>Est. Hrs</th><th>Actual Hrs</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Ichimoku.1</td><td>Built the rolling-window indicator engine to calculate Ichimoku components.</td><td>20</td><td>28</td></tr>
+        <tr><td>Ichimoku.6</td><td>Designed and implemented the Streamlit UI for parameter input and data display.</td><td>20</td><td>21</td></tr>
+        <tr><td>Ichimoku.8</td><td>Integrated CrewAI agents and crafted prompts/tasks for BUY/SELL/HOLD recommendations.</td><td>16</td><td>36</td></tr>
+        <tr><td>Ichimoku.10</td><td>Wrote unit tests for calculator and integration tests for agent workflows.</td><td>10</td><td>25</td></tr>
+        <tr><td>Ichimoku.11</td><td>Developed and validated the Backtrader-based backtesting strategy using AI signals.</td><td>18</td><td>26</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="evidence">
+    <h2>Contributions &amp; Evidence</h2>
+    <p><a href="https://github.com/rajathatikonda/Thatikonda-AI-Agent-Stock-Prediction">Link to Github</a></p>
+
+    <h3>Screenshots</h3>
+    <figure>
+      <img src="assets/images/1.jpg">
+      <figcaption>Image 1</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/images/2.jpg"">
+      <figcaption>Image 2</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/images/3.jpg">
+      <figcaption>Image 3</figcaption>
+    </figure>
+        <figure>
+      <img src="assets/images/4.jpg">
+      <figcaption>Image 4</figcaption>
+    </figure>
+        <figure>
+      <img src="assets/images/5.jpg">
+      <figcaption>Image 5</figcaption>
+    </figure>
+
+    <p>🔗 <a href="https://github.com/kalya/ichimoku-investment-advisor" target="_blank">View full repository on GitHub</a></p>
+  </section>
+
+  <section id="appendix">
+    <h2>Appendix</h2>
+
+    <h3>A. All User Stories</h3>
+    <p>Full list of user stories and acceptance criteria available in <a href="https://github.com/kalya/ichimoku-investment-advisor/issues" target="_blank">GitHub Issues</a>.</p>
+
+    <h3>B. Commit History</h3>
+    <table>
+      <thead>
+        <tr><th>Date</th><th>Commit</th><th>Description</th><th>Story</th><th>Task</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>2025-02-01</td><td>ea1b112</td><td>Add Ichimoku File</td><td>229</td><td>258</td></tr>
+        <tr><td>2025-02-01</td><td>a421fc0</td><td>Add UI code</td><td>229</td><td>258</td></tr>
+        <tr><td>2025-02-08</td><td>703160c</td><td>Add real-time data</td><td>229</td><td>263</td></tr>
+        <tr><td>2025-02-26</td><td>95013f3</td><td>Add CrewAI agents</td><td>229</td><td>265</td></tr>
+        <tr><td>2025-03-25</td><td>effa9de</td><td>Ichimoku test cases</td><td>229</td><td>267</td></tr>
+        <tr><td>2025-04-12</td><td>c04d4f5</td><td>Backtest code</td><td>229</td><td>11</td></tr>
+        <tr><td>2025-04-22</td><td>a6d0942</td><td>Update backtest code</td><td>229</td><td>11</td></tr>
+      </tbody>
+    </table>
+
+    <h3>C. Full Sprint Task Hours</h3>
+    <details>
+      <summary>Sprint 1</summary>
+      <p><a href="/Raja%20Thatikonda%20Sprint%201%20Task%20Hours.docx" download>Download Sprint 1 Task Hours</a></p>
+    </details>
+    <details>
+      <summary>Sprint 2</summary>
+      <p><a href="/Raja%20Thatikonda%20Sprint%202%20Task%20Hours.docx" download>Download Sprint 2 Task Hours</a></p>
+    </details>
+    <details>
+      <summary>Sprint 3</summary>
+      <p><a href="/Raja%20Thatikonda%20Sprint%203%20Task%20Hours.docx" download>Download Sprint 3 Task Hours</a></p>
+    </details>
+    <details>
+      <summary>Sprint 4</summary>
+      <p><a href="/Raja%20Thatikonda%20Sprint%204%20Task%20Hours.docx" download>Download Sprint 4 Task Hours</a></p>
+    </details>
+  </section>
+
+  <footer>
+    <p>© 2025 Rajathatikonda — Built with GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
